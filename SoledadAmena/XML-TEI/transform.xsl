@@ -33,7 +33,7 @@
 						</a>
 					</div>
 					<div class="headercentro">
-						<a href="/soledadamena/">Soledad amena</a>
+						<a href="https://soledadamena.com/">Soledad amena</a>
 					</div>
 					<div class="headerderecha">
 						<!-- <a href="#">Español</a> | <a href="#">Inglés</a> -->
@@ -455,7 +455,8 @@
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#GT')">
 				<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
-					data-bs-placement="top" data-bs-title="Bienvenido Morros"
+					data-bs-placement="top" data-bs-title="Gáldrick de la
+					Torre"
 					data-bs-content="20/04/2024">GT<i class="tooltiptext">Gáldrick de la
 					Torre</i></span>
 			</xsl:if>
@@ -563,7 +564,8 @@
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#EuFoMaCz')">
 				<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
-					data-bs-placement="top" data-bs-title="Bienvenido Morros"
+					data-bs-placement="top" data-bs-title="Eugenia Fosalba
+					&amp; Maria Czepiel"
 					data-bs-content="20/04/2024">EF &amp; MC<i class="tooltiptext">Eugenia Fosalba
 						&amp; Maria Czepiel</i></span>
 			</xsl:if>
@@ -681,7 +683,8 @@
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#GT')">
 				<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
-					data-bs-placement="top" data-bs-title="Bienvenido Morros"
+					data-bs-placement="top" data-bs-title="Gáldrick de la
+					Torre"
 					data-bs-content="20/04/2024">GT<i class="tooltiptext">Gáldrick de la
 					Torre</i></span>
 			</xsl:if>
@@ -789,8 +792,8 @@
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#EuFoMaCz')">
 				<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
-					data-bs-placement="top" data-bs-title="Bienvenido Morros"
-					data-bs-content="20/04/2024">EF &amp; MC<i class="tooltiptext">Eugenia Fosalba
+					data-bs-placement="top" data-bs-title="Eugenia Fosalba
+					&amp; Maria Czepiel" data-bs-content="20/04/2024">EF &amp; MC<i class="tooltiptext">Eugenia Fosalba
 						&amp; Maria Czepiel</i></span>
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#VC')">
@@ -869,8 +872,8 @@
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#GT')">
 				<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
-					data-bs-placement="top" data-bs-title="Bienvenido Morros"
-					data-bs-content="20/04/2024">GT<i class="tooltiptext">Gáldrick de la
+					data-bs-placement="top" data-bs-title="Gáldrick de la
+					Torre" data-bs-content="20/04/2024">GT<i class="tooltiptext">Gáldrick de la
 					Torre</i></span>
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#1GT-FE')">
@@ -977,8 +980,8 @@
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#EuFoMaCz')">
 				<span class="tooltipx ttip infoicon2 popo" data-bs-toggle="popover"
-					data-bs-placement="top" data-bs-title="Bienvenido Morros"
-					data-bs-content="20/04/2024">EF &amp; MC<i class="tooltiptext">Eugenia Fosalba
+					data-bs-placement="top" data-bs-title="Eugenia Fosalba
+					&amp; Maria Czepiel" data-bs-content="20/04/2024">EF &amp; MC<i class="tooltiptext">Eugenia Fosalba
 						&amp; Maria Czepiel</i></span>
 			</xsl:if>
 			<xsl:if test="contains(@resp, '#VC')">
@@ -1033,6 +1036,9 @@
 	<xsl:template match="tei:note[@type = 'n_ApCrit']">
 		<xsl:if test="preceding-sibling::tei:app">
 			<br/>
+			<xsl:apply-templates/>
+		</xsl:if>
+		<xsl:if test="preceding-sibling::tei:span">
 			<xsl:apply-templates/>
 		</xsl:if>
 	</xsl:template>
