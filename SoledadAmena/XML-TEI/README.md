@@ -11,6 +11,6 @@ En esta carpeta se encuentras los siguientes archivos:
   * `oda3.xml`: Oda latina III
   * `oda4.xml`: Oda latina IV
   * `oda5.xml`: Oda latina V
-- `pronapoli.rng`: esquema RNG que valida el corpus en su totalida.
+- `pronapoli.rng`: esquema RNG que valida el corpus en su totalidad.
 - `pronapoli_ODD.xml`: documento ODD que contiene las especificaciones del esquema RNG.
 - `transform.xsl`: script de transformación para los documentos XML-TEI hacia su salida HTML. 
